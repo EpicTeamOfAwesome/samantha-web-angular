@@ -1,23 +1,29 @@
 import { Component, OnInit } from '@angular/core';
-import { FormControl, ReactiveFormsModule } from '@angular/forms';
+import { FormBuilder, Validators, FormGroup } from '@angular/forms';
 
 @Component({
   selector: 'app-login-form',
-  template: `
-  <mat-form-field>
-    <input matInput type="email" placeholder="Email" required/>
-  </mat-form-field>
-  <mat-form-field>
-    <input matInput type="password" placeholder="Password" required autocomplete="on"/>
-  </mat-form-field>
-    `
+  templateUrl: './login-form.component.html',
+  styleUrls: ['./login-form.component.css']
 })
 export class LoginFormComponent implements OnInit {
-  emailControl = new FormControl('');
 
-  constructor() { }
+  loginForm: FormGroup;
+
+  constructor(private formBuilder: FormBuilder) { }
 
   ngOnInit() {
+    this.loginForm = this.formBuilder.group({
+      email: ['', Validators.required],
+      password: ['', Validators.required]
+    });
+  }
+
+  login() {
+
+  }
+  register() {
+
   }
 
 }

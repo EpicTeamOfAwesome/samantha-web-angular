@@ -1,10 +1,7 @@
-<mat-card class="login-box">
-  <mat-card-header>
-    <mat-card-title>Login</mat-card-title>
-  </mat-card-header>
-  <mat-card-content>
-    <form>
-      <app-login-form></app-login-form>
-    </form>
-  </mat-card-content>
-</mat-card>
+<div class="container">
+    <main class="spacer">
+        <app-login-form></app-login-form>
+        <router-outlet></router-outlet>
+        <div class="push"></div>
+    </main>
+</div>

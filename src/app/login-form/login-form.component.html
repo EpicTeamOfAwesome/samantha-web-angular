@@ -1,3 +1,23 @@
-<p>
-  login-form works!
-</p>
+<mat-card class="card">
+  <mat-card-header>
+    <mat-card-title>
+      Samantha Dashboard
+    </mat-card-title>
+  </mat-card-header>
+  <form class="login-container"[formGroup]="loginForm" (ngSubmit)="this.login()">
+    <mat-card-content>
+      <mat-form-field>
+        <input matInput type="email" placeholder="Email" formControlName="email">
+      </mat-form-field>
+      <mat-form-field>
+        <input matInput type="password" placeholder="Password" formControlName="password">
+      </mat-form-field>
+    </mat-card-content>
+    <mat-card-actions align="end">
+      <button mat-raised-button color="primary" type="submit">Login</button>
+    </mat-card-actions>
+    <mat-card-footer align="center">
+        <p>Not registered yet? <a href="#">Create an Account</a></p>
+    </mat-card-footer>
+  </form>
+</mat-card>

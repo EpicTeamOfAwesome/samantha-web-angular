@@ -1,5 +1,7 @@
 # Samantha
 
+The Frontend of the Home Automation System built in Angular.
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.4.
 
 ## Development server

@@ -1,1 +1,16 @@
 /* You can add global styles to this file, and also import other style files */
+@import '~@angular/material/prebuilt-themes/indigo-pink.css';
+
+body {
+  background-image: url(".\assets\img\backgrounds\backgroundTest.jpg");
+  height: 100%;
+  width: auto;
+  background-size: cover;
+  background-repeat:no-repeat;
+  font-family: 'Roboto', sans-serif;
+}
+
+.spacer {
+  flex: 1 1 auto;
+}
+

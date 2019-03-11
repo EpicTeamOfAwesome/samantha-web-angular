@@ -1,6 +1,6 @@
 # Samantha
 
-The Frontend of the Home Automation System built in Angular.
+Frontend for Samantha: A Quality of Life Home Assistant built on the Angular Framework.
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.4.
 
